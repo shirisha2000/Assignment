@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <header>
+  <div id="title"><h1>Customer Survey Form</h1>
+    </header>
+
+<form id="survey-form">
+
+
+  <fieldset class="fieldset">
+
+    <div class="sub-group">
+      <label class="left" id="name-label" for="name">*Name:</label>
+    <input type="text" name="customer-name" class="right input-field" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="sub-group">
+      <label class="left" id="email-label" for="email">*Email:</label>
+    <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email" id="email" required>
+    </div>
+
+    <div class="sub-group">
+      <label  class="left" id="number-label" for="number">*Age:</label>
+    <input type="number" name="Age" placeholder="Enter your Age" min="1" max="100" class="right input-field" id="number">
+  </div>
+
+    <div class="sub-group">
+      <label class="left" id="handphone-label" for="handphone">*phone:</label>
+      <input type="number" name="Number" placeholder="Enter your number" min="1" max="100" class="right input-field" id="number">
+    
+  </div>
+
+    
+  </fieldset>
+
+  <fieldset class="fieldset">
+<div class="sub-group">
+<label class="left">
+  Is this first time You are using our products & service?</label>
+
+ <ul style="list-style: none;" class="right">
+
+   <li class="radio"><label><input name="radio-buttons" type="radio" value="1" class="recommendation" >Yes</label></li> 
+   <li class="radio"><label><input name="radio-buttons" type="radio" value="2" class="recommendation" >No</label></li>
+
+       </ul></div></fieldset>
+
+    <fieldset class="fieldset">
+  <div class="sub-group">
+  <label class="left" id="left-radio">Would you suggestion to your friends and colleague?</label>
+
+   <ul style="list-style: none" class="right">
+       <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label></li>
+       <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label></li>
+   </ul>
+  </div></fieldset>
+
+  <fieldset class="fieldset">
+    <div class="sub-group">
+    <label class="left" id="left-radio">How satisfied are you with our company overall?</label>
+  
+     <ul style="list-style: none" class="right">
+         <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="recommendation">satisfied</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">Undecided</label></li>
+         <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="recommendation">Unsatisfied</label></li>
+     </ul>
+    </div></fieldset>
+
+     <fieldset class="fieldset">
+        <label class="left" id="left-radio"></label>Do you have suggestions to improve our service?
+  
+
+    <div class="commentbox">
+
+   <textarea rows="6" cols="100" placeholder="Enter your comment here..."></textarea>
+
+   <br></br>
+
+  <button id="submit" type="submit">Submit</button>
+       </div></fieldset>
+</form>
+</div>
+  </body>
+</html>
